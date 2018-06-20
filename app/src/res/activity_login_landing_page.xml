@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+    tools:context="com.example.crazybeam.pkmoney_v7.login_landing_page">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:background="#d6eaf8"
+        android:layout_marginTop="10dp"
+
+        android:text="@string/account_name"
+        android:textColor="#2c3e50"
+        android:textSize="20dp" />
+
+    <!--line
+    <TextView
+        android:id="@+id/underline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="0dp"
+
+        android:background="#17202a"
+        android:textColor="#03054b"
+        android:textSize="0dp" />
+
+        -->
+
+    <TextView
+        android:id="@+id/name_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp"
+        android:text="Name"
+        android:textColor="#e65100"
+        android:textSize="20dp" />
+
+
+</LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d6eaf8"
+                android:layout_marginTop="10dp"
+
+                android:text="@string/account_balance"
+                android:textColor="#2c3e50"
+                android:textSize="20dp" />
+
+            <!--line
+            <TextView
+                android:id="@+id/underline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="0dp"
+
+                android:background="#17202a"
+                android:textColor="#03054b"
+                android:textSize="0dp" />
+
+                -->
+
+            <TextView
+                android:id="@+id/balance_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:text="Name"
+                android:textColor="#e65100"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/profile_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d6eaf8"
+                android:layout_marginTop="10dp"
+
+                android:text="@string/profile_pic"
+                android:textColor="#2c3e50"
+                android:textSize="20dp" />
+
+            <!--line
+            <TextView
+                android:id="@+id/underline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="0dp"
+
+                android:background="#17202a"
+                android:textColor="#03054b"
+                android:textSize="0dp" />
+
+                -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_height="200dp"
+                    android:layout_width="200dp"
+
+
+                    android:layout_gravity="center"
+                    android:src="@mipmap/default_profile_pic"
+                    android:layout_marginTop="8dp"
+
+
+                    >
+
+                </ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/select_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#f0f3f4"
+                    android:text="Select Image"
+
+                    android:textSize="15dp"
+                    android:textColor="#03054b"
+                    android:onClick="onSelectProfilePic"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:ems="7"
+                    />
+
+                    <Button
+                        android:id="@+id/upload_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="#f0f3f4"
+                        android:text="Upload Image"
+                        android:ems="7"
+                        android:textSize="15dp"
+                        android:textColor="#03054b"
+                        android:onClick="onUploadProfilePic"
+                        android:textAllCaps="false"
+                       android:layout_gravity="center"
+                        />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            >
+
+            <TextView
+                android:id="@+id/set_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d6eaf8"
+                android:layout_marginTop="10dp"
+
+                android:text="@string/set_available_time"
+
+                android:textColor="#2c3e50"
+                android:textSize="20dp" />
+
+            <!--line
+            <TextView
+                android:id="@+id/underline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="0dp"
+
+                android:background="#17202a"
+                android:textColor="#03054b"
+                android:textSize="0dp" />
+
+                -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="1">
+
+
+                <ImageView
+
+                    android:layout_height="51dp"
+                    android:layout_width="51dp"
+                    android:src="@mipmap/timer"
+                    android:layout_marginTop="8dp"
+                    >
+
+                </ImageView>>
+
+                <Button
+                    android:id="@+id/goto_settime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="#f0f3f4"
+                    android:text="Schedule Time"
+
+                    android:textSize="15dp"
+                    android:textColor="#03054b"
+                    android:onClick="onscheduletime"
+                    android:textAllCaps="false"
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="1">
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:text="*Please set your free time for subjects so that other users get to know about your free time and will
+be available for challange during this time."
+                android:textStyle="italic"
+                android:textColor="#512e5f"
+                android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d6eaf8"
+                android:layout_marginTop="10dp"
+
+                android:text="@string/subjects"
+                android:textColor="#2c3e50"
+                android:textSize="20dp" />
+
+            <!--line
+            <TextView
+                android:id="@+id/underline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="0dp"
+
+                android:background="#17202a"
+                android:textColor="#03054b"
+                android:textSize="0dp" />
+
+                -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="10dp">
+
+                <CheckBox
+                    android:id="@+id/pol01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/polity"
+                    android:textSize="15dp"
+                    android:textColor="#e65100"
+
+
+                    />
+                <CheckBox
+                    android:id="@+id/geo02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="94dp"
+                    android:text="@string/geography"
+                    android:textSize="15dp"
+                    android:textColor="#e65100"
+
+                    />
+
+                </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                >
+                <CheckBox
+                    android:id="@+id/mh03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/modern_history"
+                    android:textSize="15dp"
+                    android:textColor="#e65100"
+
+                    />
+                <CheckBox
+                    android:id="@+id/ca04"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/currentAffairs"
+                    android:textSize="15dp"
+                    android:textColor="#e65100"
+                    android:layout_marginLeft="30dp"
+
+                    />
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+
+                >
+
+                <CheckBox
+                    android:id="@+id/cs05"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/programming"
+                    android:textSize="15dp"
+                    android:textColor="#e65100"
+
+                    />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:weightSum="1">
+
+
+            <ImageView
+
+                android:layout_height="52dp"
+                android:layout_width="52dp"
+                android:src="@mipmap/challange"
+
+                >
+
+            </ImageView>>
+
+            <Button
+                android:id="@+id/give_challange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="#f0f3f4"
+                android:text="Give Challenge"
+                android:textSize="15dp"
+                android:textColor="#03054b"
+                android:onClick="onGivechallange"
+                android:textAllCaps="false"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            >
+
+        <TextView
+            android:id="@+id/pending_challanges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d6eaf8"
+            android:layout_marginTop="10dp"
+
+            android:text="@string/pending_challanges"
+            android:textColor="#2c3e50"
+            android:textSize="20dp" />
+
+        <!--line
+        <TextView
+            android:id="@+id/underline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="0dp"
+
+            android:background="#17202a"
+            android:textColor="#03054b"
+            android:textSize="0dp" />
+
+            -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="1">
+
+
+                <ImageView
+
+                    android:layout_height="51dp"
+                    android:layout_width="51dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_marginTop="8dp"
+                    >
+
+                    </ImageView>>
+
+                <Button
+                    android:id="@+id/inbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="#f0f3f4"
+                    android:text="Go To Inbox"
+
+                    android:textSize="15dp"
+                    android:textColor="#03054b"
+                    android:onClick="onInbox"
+                    android:textAllCaps="false"
+                    />
+
+
+
+            </LinearLayout>
+            </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            >
+
+            <TextView
+                android:id="@+id/download_pdfs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d6eaf8"
+                android:layout_marginTop="10dp"
+
+                android:text="@string/download_pdfs"
+                android:textStyle="bold"
+                android:textColor="#2c3e50"
+                android:textSize="20dp" />
+
+            <!--line
+            <TextView
+                android:id="@+id/underline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="0dp"
+
+                android:background="#17202a"
+                android:textColor="#03054b"
+                android:textSize="0dp" />
+
+                -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="1">
+
+
+                <ImageView
+
+                    android:layout_height="51dp"
+                    android:layout_width="51dp"
+                    android:src="@mipmap/pdf_image"
+                    android:layout_marginTop="8dp"
+                    >
+
+                </ImageView>>
+
+                <Button
+                    android:id="@+id/pdfs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="#f0f3f4"
+                    android:text="Go To Download PDFs"
+
+                    android:textSize="15dp"
+                    android:textColor="#03054b"
+                    android:onClick="ondownloadpdfs"
+                    android:textAllCaps="false"
+
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            >
+
+            <TextView
+                android:id="@+id/account_recharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d6eaf8"
+                android:layout_marginTop="10dp"
+
+                android:text="@string/account_recharge"
+                android:textStyle="bold"
+                android:textColor="#2c3e50"
+                android:textSize="20dp" />
+
+            <!--line
+            <TextView
+                android:id="@+id/underline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="0dp"
+
+                android:background="#17202a"
+                android:textColor="#03054b"
+                android:textSize="0dp" />
+
+                -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="1">
+
+
+                <ImageView
+
+                    android:layout_height="52dp"
+                    android:layout_width="52dp"
+                    android:src="@mipmap/instamojo"
+                    android:layout_marginTop="8dp"
+                    >
+
+                </ImageView>>
+
+                <Button
+                    android:id="@+id/recharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="#f0f3f4"
+                    android:text="Go To Account Recharge"
+
+                    android:textSize="15dp"
+                    android:textColor="#03054b"
+                    android:onClick="onAccountRecharge"
+                    android:textAllCaps="false"
+
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/copyright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="50dp"
+
+android:text="@string/copyright"
+            android:textSize="10dp"
+            android:textColor="#424949"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            />
+
+ </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

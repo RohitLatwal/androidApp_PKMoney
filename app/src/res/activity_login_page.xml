@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.crazybeam.pkmoney_v7.login_page">
+
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <LinearLayout
+
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/user_image"
+                />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="62dp"
+        android:layout_marginRight="20dp"
+        android:inputType="textPersonName"
+        android:hint="User Name" />
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/password"
+            />
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:layout_marginRight="20dp"
+        android:inputType="textPersonName"
+        android:hint="Password"
+        android:password="true"
+     />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="36dp"
+        android:text="Sign in"
+        android:background="#81d4fa"
+       android:layout_gravity="center"
+        android:onClick="onLogin"
+        android:textAllCaps="false"
+        />
+
+
+        <LinearLayout
+
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            >
+            <TextView
+
+                android:layout_height="45dp"
+                android:layout_width="match_parent"
+                android:text="Forgotten password ?"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="#1c2833"
+                android:padding="11dp"
+                android:background="#abebc6"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp">
+
+
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/forgot_password"
+            />
+
+
+        <TextView
+            android:id="@+id/recover_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recover password."
+            android:textColor="#283593"
+android:textSize="15dp"
+            android:padding="12dp"
+            android:background="#eceff1"
+
+            android:onClick="onTextClick2"
+            android:layout_marginTop="15dp"
+            />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            >
+            <TextView
+
+                android:layout_height="45dp"
+                android:layout_width="match_parent"
+                android:text="Don't have an account ?"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="#1c2833"
+                android:padding="11dp"
+                android:background="#abebc6"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+        </LinearLayout>
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+   >
+
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/signup"
+        />
+
+
+
+    <TextView
+        android:id="@+id/newuser1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an account."
+        android:textColor="#283593"
+        android:textSize="15dp"
+        android:padding="12dp"
+        android:background="#eceff1"
+
+        android:onClick="onTextClick"
+        android:layout_marginTop="15dp"
+
+
+        />
+
+        /> <!--- "onTextClick" is a method -->
+
+    </LinearLayout>
+
+
+
+        <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:text="@string/copyright"
+        android:textSize="10dp"
+        android:textColor="#424949"
+        android:layout_gravity="center"
+      android:layout_marginTop="360dp"
+            android:layout_marginBottom="5dp"
+
+
+        />
+
+
+
+</LinearLayout>
+
+ </ScrollView>
+
+</LinearLayout>

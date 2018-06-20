@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.crazybeam.pkmoney_v7.register_user">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@mipmap/user_image"
+                android:layout_marginTop="50dp"
+               />
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+
+            android:inputType="textPersonName"
+android:layout_marginLeft="10dp"
+            android:hint="Name"
+            android:textColor="#909497" />
+
+            </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="1dp"
+            >
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginTop="50dp"
+                />
+
+
+
+            <EditText
+                android:id="@+id/user_emailid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+
+                android:inputType="textPersonName"
+                android:layout_marginLeft="10dp"
+                android:hint="Email Id"
+                android:textColor="#909497" />
+
+            </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="1dp"
+            >
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@mipmap/mobile_number"
+                android:layout_marginTop="50dp"
+                />
+
+
+
+            <EditText
+                android:id="@+id/user_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+
+                android:inputType="textPersonName"
+                android:layout_marginLeft="10dp"
+                android:hint="Mobile Number"
+                android:textColor="#909497" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="1dp"
+            >
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@mipmap/password"
+                android:layout_marginTop="50dp"
+                />
+
+
+
+            <EditText
+                android:id="@+id/user_password1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:password="true"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="10dp"
+                android:hint="Password"
+                android:textColor="#909497" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="1dp"
+            >
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@mipmap/password"
+                android:layout_marginTop="50dp"
+                />
+
+
+
+            <EditText
+                android:id="@+id/user_password2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:password="true"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="10dp"
+                android:hint="Password"
+                android:textColor="#909497" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="1dp"
+            >
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@mipmap/state"
+                android:layout_marginTop="50dp"
+                />
+
+
+
+            <EditText
+                android:id="@+id/user_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+
+                android:inputType="textPersonName"
+                android:layout_marginLeft="10dp"
+                android:hint="State"
+                android:textColor="#909497" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="1dp"
+            >
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@mipmap/india"
+                android:layout_marginTop="50dp"
+                />
+
+
+
+            <EditText
+                android:id="@+id/user_nationality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+
+                android:inputType="textPersonName"
+                android:layout_marginLeft="10dp"
+                android:hint="Indian"
+                android:textColor="#909497" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+
+            android:background="#81d4fa"
+
+            android:onClick="onRegistration"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@+id/register"
+
+            android:layout_marginTop="50dp"
+            android:text="@string/copyright"
+            android:textColor="#424949"
+
+android:layout_marginBottom="10dp"
+            android:textSize="10dp"
+
+            />
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

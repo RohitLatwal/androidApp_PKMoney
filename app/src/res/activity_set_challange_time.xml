@@ -1,0 +1,1208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.crazybeam.pkmoney_v7.set_challange_time"
+    android:orientation="vertical"
+    >
+
+
+
+
+    <ScrollView
+
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+
+        <LinearLayout
+
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d6eaf8"
+        android:layout_marginTop="10dp"
+
+        android:text="@string/note"
+        android:textColor="#2c3e50"
+        android:textSize="20dp" />
+
+
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:text="Set your available time here for each subject. So that other users will know
+about your time and they will be availabe at that time.It is requested that be stick to your time and during
+this time be available within 2 mins once you accepted challenge request of other user."
+        android:textStyle="italic"
+        android:textColor="#512e5f"
+        android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/description2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:text="Once you set your free time we will add 1hr buffer supposing you will take
+rest of 1hr after hours of study.So after hours of preparation be ready to take challange and
+test your level of preparation with decent opportunity to earn."
+                android:textStyle="italic"
+                android:textColor="#512e5f"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:id="@+id/description3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:text="*Though it is not mandatory to take/give challange only during
+your available time that you set here, you can give or take challange anytime but in that case
+other user must be available for that subject and he must have accepted your challenge within 2 mins."
+                android:textStyle="italic"
+                android:textColor="#512e5f"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:id="@+id/description4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:text="For new users we will set default challange time between 5:00PM to 6:00PM,though later
+they can change it as per their wish."
+                android:textStyle="italic"
+                android:textColor="#512e5f"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/Polity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d6eaf8"
+
+
+                android:text="@string/tpolity"
+                android:textColor="#2c3e50"
+                android:textSize="20dp"
+                android:layout_marginTop="50dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="(HH)"
+                    android:layout_marginLeft="44dp"
+                    />
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="(MM)"
+
+                    android:layout_marginLeft="124dp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+
+                >
+
+
+                <ImageView
+
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@mipmap/plus"
+                    android:onClick="onPlus"
+
+                    android:layout_marginTop="8dp"
+                    />
+
+    <Button
+        android:id="@+id/Hours"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:ems="2"
+
+        android:maxLength="2"
+        android:text="00"
+ android:textSize="20dp"
+
+        android:textStyle="bold"
+        android:background="#d1f2eb"
+
+        android:layout_marginTop="5dp"
+
+
+
+        />
+
+                <ImageView
+
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@mipmap/minus"
+                    android:onClick="onMinus"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+
+                    android:layout_marginTop="5dp"
+
+                    />
+
+
+                <ImageView
+                    android:id="@+id/min_plusimg"
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@mipmap/plus"
+                    android:onClick="onMinutePlus"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <Button
+                    android:id="@+id/minutes"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:ems="2"
+
+                    android:maxLength="2"
+                    android:text="00"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:background="#d1f2eb"
+
+                    android:layout_marginTop="5dp"
+
+
+
+                    />
+
+                <ImageView
+                    android:id="@+id/min_minusimg"
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@mipmap/minus"
+                    android:onClick="onMinuteMinus"
+
+                    android:layout_marginTop="8dp"
+                    />
+
+                <Button
+                    android:id="@+id/am_pm"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="AM"
+                    android:onClick="onAm_Pm"
+                    android:background="#d5d8dc"
+android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+
+
+                    />
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/msg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yours set challange time :"
+                    android:textColor="#1a5276"
+
+
+                    android:background="#f2f4f4"
+                    android:paddingTop="5dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="30dp"
+
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+
+                <Button
+                    android:id="@+id/save_pol"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:text="Save"
+                    android:onClick="onSavePolity"
+
+
+                    android:background="#5dade2"
+                    android:layout_marginLeft="12dp"
+                   android:layout_marginTop="20dp"
+
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/geography"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d6eaf8"
+
+
+                android:text="@string/tgeo"
+                android:textColor="#2c3e50"
+                android:textSize="20dp"
+                android:layout_marginTop="50dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="(HH)"
+                    android:layout_marginLeft="44dp"
+                    />
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="(MM)"
+
+                    android:layout_marginLeft="124dp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+
+                >
+
+
+                <ImageView
+
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@mipmap/plus"
+                    android:onClick="onPlus_geo"
+
+                    android:layout_marginTop="8dp"
+                    />
+
+                <Button
+                    android:id="@+id/geo_Hours"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:ems="2"
+
+                    android:maxLength="2"
+                    android:text="00"
+                    android:textSize="20dp"
+
+                    android:textStyle="bold"
+                    android:background="#d1f2eb"
+
+                    android:layout_marginTop="5dp"
+
+
+
+                    />
+
+                <ImageView
+
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@mipmap/minus"
+                    android:onClick="onMinus_geo"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+
+                    android:layout_marginTop="5dp"
+
+                    />
+
+
+                <ImageView
+
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@mipmap/plus"
+                    android:onClick="onMinutePlus_geo"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <Button
+                    android:id="@+id/geo_minutes"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:ems="2"
+
+                    android:maxLength="2"
+                    android:text="00"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:background="#d1f2eb"
+
+                    android:layout_marginTop="5dp"
+
+
+
+                    />
+
+                <ImageView
+
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@mipmap/minus"
+                    android:onClick="onMinuteMinus_geo"
+
+                    android:layout_marginTop="8dp"
+                    />
+
+                <Button
+                    android:id="@+id/am_pm_geo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="AM"
+                    android:onClick="onAm_Pm_geo"
+                    android:background="#d5d8dc"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/msg_geo"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Yours set challange time :"
+                    android:textColor="#1a5276"
+
+
+                    android:background="#f2f4f4"
+                    android:paddingTop="5dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="30dp"
+
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+
+                <Button
+                    android:id="@+id/save_geo"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:text="Save"
+
+android:onClick="onSaveGeo"
+                    android:background="#5dade2"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="20dp"
+
+
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d6eaf8"
+
+
+                android:text="@string/tmhis"
+                android:textColor="#2c3e50"
+                android:textSize="20dp"
+                android:layout_marginTop="50dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="(HH)"
+                    android:layout_marginLeft="44dp"
+                    />
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="(MM)"
+
+                    android:layout_marginLeft="124dp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+
+                >
+
+
+                <ImageView
+
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@mipmap/plus"
+                    android:onClick="onPlus_his"
+
+                    android:layout_marginTop="8dp"
+                    />
+
+                <Button
+                    android:id="@+id/his_Hours"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:ems="2"
+
+                    android:maxLength="2"
+                    android:text="00"
+                    android:textSize="20dp"
+
+                    android:textStyle="bold"
+                    android:background="#d1f2eb"
+
+                    android:layout_marginTop="5dp"
+
+
+
+                    />
+
+                <ImageView
+
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@mipmap/minus"
+                    android:onClick="onMinus_his"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+
+                    android:layout_marginTop="5dp"
+
+                    />
+
+
+                <ImageView
+
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@mipmap/plus"
+                    android:onClick="onMinutePlus_his"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <Button
+                    android:id="@+id/his_minutes"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:ems="2"
+
+                    android:maxLength="2"
+                    android:text="00"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:background="#d1f2eb"
+
+                    android:layout_marginTop="5dp"
+
+
+
+                    />
+
+                <ImageView
+
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@mipmap/minus"
+                    android:onClick="onMinuteMinus_his"
+
+                    android:layout_marginTop="8dp"
+                    />
+
+                <Button
+                    android:id="@+id/am_pm_his"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="AM"
+                    android:onClick="onAm_Pm_his"
+                    android:background="#d5d8dc"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/msg_his"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Yours set challange time :"
+                    android:textColor="#1a5276"
+
+
+                    android:background="#f2f4f4"
+                    android:paddingTop="5dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="30dp"
+
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+
+                <Button
+                    android:id="@+id/save_his"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:text="Save"
+
+                     android:onClick="onSaveHis"
+                    android:background="#5dade2"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="20dp"
+
+
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/tca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d6eaf8"
+
+
+                android:text="@string/tca"
+                android:textColor="#2c3e50"
+                android:textSize="20dp"
+                android:layout_marginTop="50dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="(HH)"
+                    android:layout_marginLeft="44dp"
+                    />
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="(MM)"
+
+                    android:layout_marginLeft="124dp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+
+                >
+
+
+                <ImageView
+
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@mipmap/plus"
+                    android:onClick="onPlus_ca"
+
+                    android:layout_marginTop="8dp"
+                    />
+
+                <Button
+                    android:id="@+id/ca_Hours"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:ems="2"
+
+                    android:maxLength="2"
+                    android:text="00"
+                    android:textSize="20dp"
+
+                    android:textStyle="bold"
+                    android:background="#d1f2eb"
+
+                    android:layout_marginTop="5dp"
+
+
+
+                    />
+
+                <ImageView
+
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@mipmap/minus"
+                    android:onClick="onMinus_ca"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+
+                    android:layout_marginTop="5dp"
+
+                    />
+
+
+                <ImageView
+
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@mipmap/plus"
+                    android:onClick="onMinutePlus_ca"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <Button
+                    android:id="@+id/ca_minutes"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:ems="2"
+
+                    android:maxLength="2"
+                    android:text="00"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:background="#d1f2eb"
+
+                    android:layout_marginTop="5dp"
+
+
+
+                    />
+
+                <ImageView
+
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@mipmap/minus"
+                    android:onClick="onMinuteMinus_ca"
+
+                    android:layout_marginTop="8dp"
+                    />
+
+                <Button
+                    android:id="@+id/am_pm_ca"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="AM"
+                    android:onClick="onAm_Pm_ca"
+                    android:background="#d5d8dc"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/msg_ca"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Yours set challange time :"
+                    android:textColor="#1a5276"
+
+
+                    android:background="#f2f4f4"
+                    android:paddingTop="5dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="30dp"
+
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+
+                <Button
+                    android:id="@+id/save_ca"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:text="Save"
+
+android:onClick="onSaveCa"
+                    android:background="#5dade2"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="20dp"
+
+
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/cs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d6eaf8"
+
+
+                android:text="@string/tcs"
+                android:textColor="#2c3e50"
+                android:textSize="20dp"
+                android:layout_marginTop="50dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="(HH)"
+                    android:layout_marginLeft="44dp"
+                    />
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="(MM)"
+
+                    android:layout_marginLeft="124dp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+
+                >
+
+
+                <ImageView
+
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@mipmap/plus"
+                    android:onClick="onPlus_cs"
+
+                    android:layout_marginTop="8dp"
+                    />
+
+                <Button
+                    android:id="@+id/cs_Hours"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:ems="2"
+
+                    android:maxLength="2"
+                    android:text="00"
+                    android:textSize="20dp"
+
+                    android:textStyle="bold"
+                    android:background="#d1f2eb"
+
+                    android:layout_marginTop="5dp"
+
+
+
+                    />
+
+                <ImageView
+
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@mipmap/minus"
+                    android:onClick="onMinus_cs"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+
+                    android:layout_marginTop="5dp"
+
+                    />
+
+
+                <ImageView
+
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@mipmap/plus"
+                    android:onClick="onMinutePlus_cs"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <Button
+                    android:id="@+id/cs_minutes"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:ems="2"
+
+                    android:maxLength="2"
+                    android:text="00"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:background="#d1f2eb"
+
+                    android:layout_marginTop="5dp"
+
+
+
+                    />
+
+                <ImageView
+
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:src="@mipmap/minus"
+                    android:onClick="onMinuteMinus_cs"
+
+                    android:layout_marginTop="8dp"
+                    />
+
+                <Button
+                    android:id="@+id/am_pm_cs"
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="AM"
+                    android:onClick="onAm_Pm_cs"
+                    android:background="#d5d8dc"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/msg_cs"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Yours set challange time :"
+                    android:textColor="#1a5276"
+
+
+
+                    android:background="#f2f4f4"
+                    android:paddingTop="5dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="30dp"
+
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+
+                <Button
+                    android:id="@+id/save_cs"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:text="Save"
+
+android:onClick="onSaveCs"
+                    android:background="#5dade2"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="20dp"
+
+
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/copyright_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/copyright"
+
+
+                    android:layout_marginTop="20dp"
+
+
+                    />
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
